@@ -2,12 +2,13 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    /* outline: 1px solid; */
+    // outline: 1px solid;
 }
 
 img {
     max-width: 100%;
-    /*避免圖片跑出範圍*/
+    height: auto;
+    vertical-align: middle;
 }
 
 body {

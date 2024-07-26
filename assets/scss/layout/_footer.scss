@@ -1,7 +1,22 @@
 .footer {
-  background: $color-red;
+  background: $primary-color;
   line-height: 1.5;
   color: #fff;
+  padding-top: 48px;
+  // padding-bottom: 32px;
+
+  .content {
+    border-bottom: 1px solid #fff;
+    padding-bottom: 32px;
+  }
+
+  .menu {
+    margin: 0 -12px;
+  }
+
+  .menu a {
+    padding: 12px;
+  }
 
   ul.info {
     border-bottom: #fff 1px solid;

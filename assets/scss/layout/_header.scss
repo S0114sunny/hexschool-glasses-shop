@@ -1,14 +1,14 @@
 .header {
-  background: $color-red;
+  background: $primary-color;
   font-size: 20px;
   line-height: 1.5;
-  padding: 16px 0;
-}
 
-a {
-  color: #FFFFFF;
-}
+  a {
+    color: #FFFFFF;
+    padding: 25px 0;
+  }
 
-img {
-  width: 80px;
+  img {
+    width: 80px;
+  }
 }
