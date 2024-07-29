@@ -1,0 +1,60 @@
+.nav {
+  background: $primary-color;
+  font-size: 20px;
+  line-height: 1.5;
+  font-size: 20px;
+  color: #FFFFFF;
+
+  .menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    ul {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 64px;
+
+      a {
+        padding: 25px 0px;
+      }
+    }
+
+    img {
+      width: 80px;
+    }
+  }
+
+  @include pad() {
+    ul {
+      margin-right: 24px;
+    }
+  }
+
+  @include mobile() {
+    .menu {
+      display: block;
+
+      ul {
+        gap: 0;
+        margin: 0 -12px;
+
+        li {
+          width: 50%;
+          text-align: center;
+          border: 1px solid #FFFFFF;
+
+          a {
+            padding: 12px 0;
+            display: block;
+          }
+        }
+      }
+
+      img {
+        width: 80px;
+        padding: 16px 0;
+      }
+    }
+  }
+}

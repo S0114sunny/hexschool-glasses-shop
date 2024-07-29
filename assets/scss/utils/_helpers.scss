@@ -1,74 +1,36 @@
-.wrap {
-    max-width: 1296px;
+.container {
+    max-width: 1320px;
     margin: 0 auto;
+    padding: 0 12px;
+    /* 間距/2 */
+
+    @include pad() {
+        min-width: 720px;
+        /* 12*36+11*24+24(row的padding) = 720 */
+    }
+
+    @include mobile() {
+        min-width: 372px;
+        /* 4*69+3*24+24(row的padding) = 372 */
+    }
+}
+
+.container-md-fluid {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
+}
+
+.container-sm-full {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 12px;
 }
 
 .d-flex {
     display: flex;
 }
 
-.justify-content-between {
-    justify-content: space-between;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.gap-6 {
-    gap: 24px;
-}
-
-.gap-8 {
-    gap: 32px;
-}
-
-.gap-16 {
-    gap: 64px;
-}
-
-.mb-auto {
-    margin-bottom: auto;
-}
-
-.mb-6 {
-    margin-bottom: 24px;
-}
-
-.mr-auto {
-    margin-right: auto;
-}
-
-.mr-5 {
-    margin-right: 20px;
-}
-
 .mr-12 {
     margin-right: 48px;
 }
-
-.mr-16 {
-    margin-right: 64px;
-}
-
-.padding-vertical-4 {
-    padding: 16px 0;
-}
-
-// .pt-4 {
-//     padding-top: 16px;
-// }
-
-.fsz-4 {
-    font-size: 16px;
-}
-
-.fsz-9 {
-    font-size: 36px;
-}
-
-// @media (max-width: 576px) {
-//     .wrap {
-//         max-width: 375px;
-//     }
-// }
