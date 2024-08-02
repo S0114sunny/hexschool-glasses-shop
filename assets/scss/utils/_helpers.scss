@@ -6,11 +6,13 @@
 
     @include pad() {
         min-width: 720px;
+        padding: 0 36px;
         /* 12*36+11*24+24(row的padding) = 720 */
     }
 
     @include mobile() {
         min-width: 372px;
+        padding: 0 14px;
         /* 4*69+3*24+24(row的padding) = 372 */
     }
 }
@@ -33,4 +35,11 @@
 
 .mr-12 {
     margin-right: 48px;
+}
+
+.h1 {
+    padding-left: 16px;
+    font-size: 48px;
+    font-weight: bold;
+    border-left: 8px solid $primary-color;
 }

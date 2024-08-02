@@ -2,7 +2,7 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    // outline: 1px solid;
+    outline: 1px solid;
 }
 
 img {
@@ -13,6 +13,7 @@ img {
 
 body {
     font-family: "Roboto", "Noto Sans TC", sans-serif;
+    line-height: 1.5;
 }
 
 a {
