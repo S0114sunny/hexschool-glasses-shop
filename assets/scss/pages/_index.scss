@@ -24,7 +24,7 @@ body {
 .banner {
   height: calc(787px + 80px);
   color: $dark-primary-color;
-  background-image: url("../assets/images/home-header.png");
+  background-image: url("/assets/images/home-header.png");
   background-position: center;
   background-size: cover;
 
@@ -59,7 +59,7 @@ body {
   }
 
   @include mobile() {
-    background-image: url("../assets/images/home-header-sm.png");
+    background-image: url("/assets/images/home-header-sm.png");
 
     h1 {
       font-size: 16px;
@@ -177,17 +177,17 @@ body {
 }
 
 .co-branded {
-  background-image: url("../assets/images/index-bg.png");
+  background-image: url("/assets/images/index-bg.png");
   padding: 80px 0;
   background-position: center;
   background-size: cover;
 
   @include pad() {
-    background-image: url("../assets/images/index-bg-md.png");
+    background-image: url("/assets/images/index-bg-md.png");
   }
 
   @include mobile() {
-    background-image: url("../assets/images/index-bg-sm.png");
+    background-image: url("/assets/images/index-bg-sm.png");
     padding: 40px 0;
   }
 
@@ -217,10 +217,10 @@ body {
       height: 240px;
       background-position: center;
       background-size: cover;
-      background-image: url("../assets/images/home-section4-1.png");
+      background-image: url("/assets/images/home-section4-1.png");
 
       @include mobile() {
-        background-image: url("../assets/images/home-section4-1-sm.png");
+        background-image: url("/assets/images/home-section4-1-sm.png");
       }
     }
 
@@ -228,10 +228,10 @@ body {
       height: 240px;
       background-position: center;
       background-size: cover;
-      background-image: url("../assets/images/home-section4-2.png");
+      background-image: url("/assets/images/home-section4-2.png");
 
       @include mobile() {
-        background-image: url("../assets/images/home-section4-2-sm.png");
+        background-image: url("/assets/images/home-section4-2-sm.png");
       }
     }
   }
