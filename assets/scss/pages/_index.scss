@@ -1,3 +1,26 @@
+%title {
+  font-size: 48px;
+  color: $dark-primary-color;
+  font-weight: bold;
+  text-align: center;
+}
+
+body {
+  h3 {
+    @extend %title;
+
+    @include mobile() {
+      font-size: 24px;
+    }
+  }
+
+  .subtitle {
+    @extend %title;
+    color: $primary-color;
+    font-style: italic;
+  }
+}
+
 .banner {
   height: calc(787px + 80px);
   color: $dark-primary-color;
@@ -52,33 +75,309 @@
   background-color: $third-color;
   text-align: center;
   padding: 80px 0;
-  color: $dark-primary-color;
-  font-weight: bold;
 
-  h3 {
-    font-size: 48px;
+  @include mobile() {
+    padding: 40px 0;
   }
 
   ul {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+
+    .column {
+      //容器
+      width: 25%;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      @include pad() {
+        width: 50%;
+      }
+
+      @include mobile() {
+        width: 100%;
+      }
+    }
 
     .card {
+
+      //內容
       span {
         font-size: 84px;
-        margin-bottom: 24px;
+        margin: 24px 0;
+        color: $dark-primary-color;
       }
 
       h4 {
         font-size: 24px;
         margin-bottom: 8px;
+        font-weight: bold;
+        color: $dark-primary-color;
       }
 
       p {
         color: #000;
         font-size: 16px;
         font-weight: normal;
+        text-align: start;
+      }
+    }
+  }
+}
+
+.classic {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 0;
+
+  @include mobile() {
+    padding: 40px 0;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -12px;
+    margin-left: -12px;
+
+    @include pad() {
+      margin: 0 -12px;
+    }
+
+    .column {
+      //容器
+      width: 33.33%;
+      padding-left: 12px;
+      padding-right: 12px;
+
+      @include pad() {
+        width: 100%;
+        padding: 12px 0;
       }
     }
 
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        margin-bottom: 8px;
+        // max-width: 416px;
+
+        @include pad() {
+          max-width: 336px;
+        }
+      }
+    }
+  }
+}
+
+.co-branded {
+  background-image: url("../assets/images/index-bg.png");
+  padding: 80px 0;
+  background-position: center;
+  background-size: cover;
+
+  @include pad() {
+    background-image: url("../assets/images/index-bg-md.png");
+  }
+
+  @include mobile() {
+    background-image: url("../assets/images/index-bg-sm.png");
+    padding: 40px 0;
+  }
+
+  h3 {
+    color: #fff;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+
+    .subtitle {
+      background-color: #fff;
+    }
+
+  }
+
+  .column {
+    //容器
+    width: 50%;
+
+    @include pad() {
+      width: 100%;
+    }
+
+    .leftimg {
+      height: 240px;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../assets/images/home-section4-1.png");
+
+      @include mobile() {
+        background-image: url("../assets/images/home-section4-1-sm.png");
+      }
+    }
+
+    .rightimg {
+      height: 240px;
+      background-position: center;
+      background-size: cover;
+      background-image: url("../assets/images/home-section4-2.png");
+
+      @include mobile() {
+        background-image: url("../assets/images/home-section4-2-sm.png");
+      }
+    }
+  }
+
+}
+
+.recommend {
+  padding: 80px 0;
+
+  @include mobile() {
+    padding: 40px 0;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 48px -12px 0 -12px;
+    align-items: center;
+
+    @include pad() {
+      margin: 0 -12px;
+    }
+
+    @include mobile() {
+      margin: 0 -12px;
+    }
+
+    .column {
+      width: 25%;
+      padding: 0 12px;
+
+      @include pad() {
+        width: 50%;
+        padding: 12px 12px;
+      }
+
+      @include mobile() {
+        width: 100%;
+        padding: 12px 12px;
+      }
+    }
+
+    .card {
+      font-size: 16px;
+      box-shadow: 0px 2px 6px #00000029;
+      border: 1px solid #DEE2E6;
+      border-radius: 4px;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+
+      @include pad() {
+        max-width: 336px;
+      }
+
+      @include mobile() {
+        max-width: 348px;
+      }
+
+      .card-content {
+        padding: 16px;
+
+        display: flex;
+        flex-direction: column;
+        height: 205px;
+
+        .date {
+          margin-top: auto;
+          color: #707070;
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+.form {
+  background-color: #FBF2F2;
+  padding: 80px 0;
+
+
+  @include mobile() {
+    padding: 40px 0;
+  }
+
+  .form-content {
+    width: 50%;
+    margin: 0 auto;
+
+    @include pad() {
+      width: 80%;
+    }
+
+    @include mobile() {
+      width: 100%;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      font-size: 16px;
+      line-height: 1.5;
+
+      label {
+        margin-bottom: 8px;
+      }
+
+      input {
+        border: 1px solid #000000;
+        padding: 6px 12px;
+        margin-bottom: 16px;
+
+        &::placeholder {
+          opacity: 20%;
+        }
+      }
+
+      textarea {
+        padding: 6px 12px;
+        border: 1px solid #000000;
+        height: 136px;
+        margin-bottom: 16px;
+      }
+
+      button {
+        padding: 16px 0;
+        color: #fff;
+        background-color: $primary-color;
+        cursor: pointer;
+        width: 33%;
+        margin: 0 auto;
+
+        &:hover {
+          background-color: $dark-primary-color;
+        }
+
+        @include pad() {
+          width: 50%;
+        }
+
+        @include mobile() {
+          width: 100%;
+        }
+      }
+    }
   }
 }
