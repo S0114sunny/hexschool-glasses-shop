@@ -5,28 +5,14 @@
     /* 間距/2 */
 
     @include pad() {
-        min-width: 720px;
-        padding: 0 36px;
+        max-width: 720px;
         /* 12*36+11*24+24(row的padding) = 720 */
     }
 
     @include mobile() {
-        min-width: 372px;
-        padding: 0 14px;
+        max-width: 100%;
         /* 4*69+3*24+24(row的padding) = 372 */
     }
-}
-
-.container-md-fluid {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
-}
-
-.container-sm-full {
-    max-width: 1320px;
-    margin: 0 auto;
-    padding: 0 12px;
 }
 
 .d-flex {
