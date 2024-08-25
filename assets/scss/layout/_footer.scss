@@ -34,6 +34,7 @@
       span {
         font-size: 36px;
         margin-right: 22px;
+        padding-left: 6px;
       }
     }
 
@@ -55,6 +56,10 @@
     p {
       margin-right: auto;
     }
+
+    a {
+      font-size: 14px;
+    }
   }
 
   @include pad() {
@@ -68,9 +73,10 @@
     padding-bottom: 24px;
 
     .content {
+      padding-bottom: 24px;
+
       .menu {
         display: none;
-        margin-bottom: 24px;
       }
 
       .contact {
