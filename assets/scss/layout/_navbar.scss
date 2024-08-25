@@ -4,6 +4,22 @@
   font-size: 20px;
   color: #FFFFFF;
 
+  h1 {
+    padding: 12px;
+
+    a {
+      background-image: url("../images/logo-white.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      display: block;
+      width: 80px;
+      height: 48.57px;
+      text-indent: 101%;
+      overflow: hidden;
+      white-space: nowrap;
+    }
+  }
+
   .menu {
     display: flex;
     justify-content: space-between;
@@ -21,12 +37,6 @@
 
     img {
       width: 80px;
-    }
-  }
-
-  @include pad() {
-    ul {
-      margin-right: 24px;
     }
   }
 
@@ -51,7 +61,6 @@
       }
 
       img {
-        width: 80px;
         padding: 16px 0;
       }
     }
