@@ -2,18 +2,18 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <title>部落格</title>
+        <title>門市據點</title>
   <script type="module" crossorigin src="/hexschool-glasses-shop/assets/main-d5c1db15.js"></script>
   <link rel="stylesheet" href="/hexschool-glasses-shop/assets/main-7c6bef98.css">
 </head>
 
 <body>
-  <div class="nav">
+    <div class="nav">
     <div class="menu container">
         <h1>
             <a href="#">glasses shop</a>
@@ -26,8 +26,52 @@
         </ul>
     </div>
 </div>
-    <h1 class="h1">部落格</h1>
-    <footer class="footer">
+        <section class="shopInfo">
+            <div class="container">
+                <h1 class="h1">門市據點</h1>
+                <div class="select mb-10">
+                    <label for="place-select">選擇分店</label>
+                    <select name="places" id="place-select">
+                        <option value="Taipei">台北中山旗艦店</option>
+                    </select>
+                </div>
+                <div class="shop">
+                    <div class="card">
+                        <img src="/hexschool-glasses-shop/assets/store-1-e8e7cac3.png" alt="">
+                        <div class="info">
+                            <p class="title">台北中山旗艦店</p>
+                            <ul class="content">
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        call
+                                    </span>
+                                    <p>電話：(02)000-1234</p>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        schedule
+                                    </span>
+                                    <p>營業時間：10:00-21:00</p>
+                                </li>
+                                <li>
+                                    <span class="material-symbols-outlined">
+                                        location_on
+                                    </span>
+                                    <p>地址：台北市中山區南京東路25巷2-1號</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="map">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1807.229378033375!2d121.52538340673739!3d25.052435724297847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3442a966f6fc092d%3A0x9f740ea896779b57!2zMTA0OTHlj7DljJfluILkuK3lsbHljYDljZfkuqzmnbHot6_kuozmrrUyNeiZnw!5e0!3m2!1szh-TW!2stw!4v1723735120087!5m2!1szh-TW!2stw"
+                            width="800" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
     <div class="container">
         <div class="content">
             <div>
@@ -71,7 +115,7 @@
     </div>
 </footer>
 
-      
+            
 </body>
 
 </html>
